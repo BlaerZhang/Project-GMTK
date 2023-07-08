@@ -23,19 +23,23 @@ public class LevelMovement : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.W))
         {
-            transform.DOMoveY(transform.position.y + stepDistance, 0.2f);
+            transform.DOMoveY(transform.position.y + stepDistance, 0.2f)
+                .OnComplete(() => { GameManager.SaveGameState(); });
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
-            transform.DOMoveX(transform.position.x - stepDistance, 0.2f);
+            transform.DOMoveX(transform.position.x - stepDistance, 0.2f)
+                .OnComplete(() => { GameManager.SaveGameState(); });
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
-            transform.DOMoveY(transform.position.y - stepDistance, 0.2f);
+            transform.DOMoveY(transform.position.y - stepDistance, 0.2f)
+                .OnComplete(() => { GameManager.SaveGameState(); });
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
-            transform.DOMoveX(transform.position.x + stepDistance, 0.2f);
+            transform.DOMoveX(transform.position.x + stepDistance, 0.2f)
+                .OnComplete(() => { GameManager.SaveGameState(); });
         }
     }
 }
