@@ -16,7 +16,7 @@ public class PushableObject : MonoBehaviour, IPushable
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        print(other.collider.name);
+        // print(other.collider.name);
         // if the last pusher and the current pusher are different, the movement caused by the current pusher is not allowed
         if (DOTween.IsTweening(transform, true) & !other.collider.tag.Equals(lastPusher)) return;
         Push(CheckColliderLocation(other.collider));
