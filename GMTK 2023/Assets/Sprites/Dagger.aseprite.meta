@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 27646c627f532b54db2895350a5edd6e
+guid: 00b53ed2e57908d4b9a2683e3d58ca98
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -71,7 +71,7 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 0
     defaultPivotSpace: 0
@@ -83,7 +83,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
     layerImportMode: 0
     defaultPivotSpace: 0
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638244627657160859
+  platformSettingsDirtyTick: 638244665497575686
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 1
+  - name: Dagger
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: -0.5}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
       width: 16
-      height: 15
-    spriteID: 11b0d93080eea4f4da11720d4c1665b2
+      height: 8
+    spriteID: 74ba9e16975223248a7292806a18ef3f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,7 +140,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Goblin_0
+  - name: Dagger_0
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -148,10 +148,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 4
+      y: 0
       width: 16
-      height: 15
-    spriteID: ca9a4eca6c7d2fd4ea389e62c145ac90
+      height: 16
+    spriteID: df8096d2a728bd045a8d161ddfe6919d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -161,8 +161,8 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
-  - layerIndex: 1
-    guid: 1317222745
+  - layerIndex: 0
+    guid: 1317222744
     name: Layer 1
     layerFlags: 3
     layerType: 0
@@ -172,10 +172,10 @@ ScriptedImporter:
       frameIndex: 0
       cellRect:
         x: 0
-        y: 1
+        y: 4
         width: 16
-        height: 15
-      spriteId: 11b0d93080eea4f4da11720d4c1665b2
+        height: 8
+      spriteId: 8f3ab724e0adf044a862b747355670d4
     linkedCells: []
     parentIndex: -1
   platformSettings:

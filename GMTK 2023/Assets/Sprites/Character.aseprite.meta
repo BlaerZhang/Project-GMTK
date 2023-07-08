@@ -119,26 +119,6 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Background
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 8064dec4444951f4b89452463b5fd83b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
   - name: Character
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +127,7 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 28
+      y: 4
       width: 15
       height: 16
     spriteID: 12a4c037b69312c44bb7427e56acd76f
@@ -158,26 +138,9 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
+    uvTransform: {x: 4, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
-  - layerIndex: 0
-    guid: -1021688250
-    name: Background
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Background
-      frameIndex: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: 8064dec4444951f4b89452463b5fd83b
-    linkedCells: []
-    parentIndex: -1
   - layerIndex: 1
     guid: -1246400680
     name: Character

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1cbd8f8f5d5acea4595316ed83486e79
+guid: b605ce36c8372644d9c610ad73531d46
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638244637664275827
+  platformSettingsDirtyTick: 638244636313303272
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Water
+  - name: Lava
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.49999997, y: -2}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 48
-      height: 48
-    spriteID: dfd4e4d187e3b0344898e2423d64df78
+      width: 16
+      height: 16
+    spriteID: ab3b3cd03097e844fb60723e924095c3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -140,9 +140,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
   spriteSheetImportData:
-  - name: Water_0
+  - name: Lava_0
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -151,7 +151,7 @@ ScriptedImporter:
       y: 100
       width: 16
       height: 16
-    spriteID: 015eeab2e8cdd5e41a9e303cddb09bb6
+    spriteID: 338b73351af4c564fb0acf6bec54a019
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,9 +160,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_1
+  - name: Lava_1
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -171,7 +171,7 @@ ScriptedImporter:
       y: 76
       width: 16
       height: 16
-    spriteID: bcfcaebf6ff1ebc45b8cfc0cb7231c3d
+    spriteID: 14b7915503259fa42a5a06173c17232c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -180,9 +180,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_2
+  - name: Lava_2
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -191,7 +191,7 @@ ScriptedImporter:
       y: 76
       width: 16
       height: 16
-    spriteID: f4fa1c0298726df4988f610fe2ae1988
+    spriteID: 1d6fa523833c0f64d93c076913a51ce2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -200,9 +200,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_3
+  - name: Lava_3
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -211,7 +211,7 @@ ScriptedImporter:
       y: 52
       width: 16
       height: 16
-    spriteID: 70224db90c7da2d43822034f16542af8
+    spriteID: 2b297ba5bf9d5154f9d0d76212cfe929
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -220,9 +220,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_4
+  - name: Lava_4
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -231,7 +231,7 @@ ScriptedImporter:
       y: 52
       width: 16
       height: 16
-    spriteID: f0ba83f7116ba0a4fa0447938e2ce497
+    spriteID: 0848276b0c2d7fe479040175ba8610b1
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -240,9 +240,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_5
+  - name: Lava_5
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -251,7 +251,7 @@ ScriptedImporter:
       y: 28
       width: 16
       height: 16
-    spriteID: 1dbe3fbaacbef0e40a77818ec43bc84d
+    spriteID: 27b19aeaf670208438579ee1d714cf02
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -260,9 +260,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_6
+  - name: Lava_6
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -271,7 +271,7 @@ ScriptedImporter:
       y: 28
       width: 16
       height: 16
-    spriteID: 85902807fd8fa55489e6de177e7fed00
+    spriteID: 82ff342c44839414087b60815802df2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -280,27 +280,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
-  - name: Water_8
-    originalName: 
-    pivot: {x: 0, y: 0}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 28
-      y: 4
-      width: 16
-      height: 16
-    spriteID: 5a1e0475abd168044a5b8af413e4544b
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 0, y: 0}
-  - name: Water_7
+  - name: Lava_7
     originalName: 
     pivot: {x: 0.5, y: 0.5}
     alignment: 0
@@ -311,7 +291,27 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 16
-    spriteID: 7cc353a13b3fc194296747b08cdc0ed8
+    spriteID: 165456218730bce408344b1805f4b734
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Lava_8
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 16
+      height: 16
+    spriteID: 489b66e433601094e87ecccd5669c9bb
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -322,156 +322,156 @@ ScriptedImporter:
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 1
-    guid: -1849047959
-    name: Water_TopLeft
+    guid: 1547428700
+    name: Lava_TopCenter
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_TopLeft
+    - name: Lava_TopCenter
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 32
+        width: 16
+        height: 16
+      spriteId: 4cd4176a1c302324fb0cc5e183090cf4
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 0
+    guid: -930215887
+    name: Lava_TopLeft
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Lava_TopLeft
       frameIndex: 0
       cellRect:
         x: 0
         y: 32
         width: 16
         height: 16
-      spriteId: 44b4d5c9402f02a4d943f4dd78ea3c24
+      spriteId: b6b732972c0257b46adb0b61cdd33d22
     linkedCells: []
     parentIndex: -1
   - layerIndex: 2
-    guid: -817286382
-    name: Water_TopCenter
+    guid: 472536180
+    name: Lava_TopRight
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_TopCenter
+    - name: Lava_TopRight
       frameIndex: 0
       cellRect:
-        x: 16
+        x: 32
         y: 32
         width: 16
         height: 16
-      spriteId: ae47390293ec0264b845bcf83416ecec
+      spriteId: 8f460b1bd3f01964db671520d8948b4f
     linkedCells: []
     parentIndex: -1
   - layerIndex: 3
-    guid: -1979398930
-    name: Water_TopRight
+    guid: -682424852
+    name: Lava_MiddleLeft
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_TopRight
+    - name: Lava_MiddleLeft
       frameIndex: 0
       cellRect:
-        x: 32
-        y: 32
+        x: 0
+        y: 16
         width: 16
         height: 16
-      spriteId: ddaa58236e2f94b40a8a4853a22b8b38
+      spriteId: 7b30aade20085d949969df3a0b8060a1
     linkedCells: []
     parentIndex: -1
   - layerIndex: 4
-    guid: 461307778
-    name: Water_MiddleLeft
+    guid: 658902384
+    name: Lava_Center
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_MiddleLeft
+    - name: Lava_Center
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 16
         y: 16
         width: 16
         height: 16
-      spriteId: ebcc9e4c0c182204dba1ed6b8a632a2a
+      spriteId: 8d85aaf3655dd42468662733f1a38e93
     linkedCells: []
     parentIndex: -1
   - layerIndex: 5
-    guid: 1298017727
-    name: Water_MiddleCenter
+    guid: -784107213
+    name: Lava_MiddleRight
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_MiddleCenter
+    - name: Lava_MiddleRight
       frameIndex: 0
       cellRect:
-        x: 16
+        x: 32
         y: 16
         width: 16
         height: 16
-      spriteId: c02f5dda3088efd4b84775db072ee7c2
+      spriteId: 172443dc90d73c74383cd901728c08a5
     linkedCells: []
     parentIndex: -1
   - layerIndex: 6
-    guid: -420043615
-    name: Water_MiddleRight
+    guid: 2091490967
+    name: Lava_BottomLeft
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Water_MiddleRight
-      frameIndex: 0
-      cellRect:
-        x: 32
-        y: 16
-        width: 16
-        height: 16
-      spriteId: 4be670113d2049d49b38588a6d5f5191
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 7
-    guid: 655786786
-    name: Water_BottomRight
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Water_BottomRight
-      frameIndex: 0
-      cellRect:
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      spriteId: baecb322eb160c54b8f2856424ea9ef2
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 8
-    guid: 1836899748
-    name: Water_BottomCenter
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Water_BottomCenter
-      frameIndex: 0
-      cellRect:
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      spriteId: 4f4f087244904c74c89e7aebe70533e2
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 9
-    guid: 1661239517
-    name: Water_BottomLeft
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Water_BottomLeft
+    - name: Lava_BottomLeft
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 16
         height: 16
-      spriteId: 054f6cf9df155074b917d649cc20a275
+      spriteId: d7621001aff7fd640a8e34eca84e0e4d
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: 1929722338
+    name: Lava_BottomCenter
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Lava_BottomCenter
+      frameIndex: 0
+      cellRect:
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      spriteId: e37096a79e56a014a848831bf4bab7a3
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: -1295289856
+    name: Lava_BottomRight
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Lava_BottomRight
+      frameIndex: 0
+      cellRect:
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      spriteId: 4bd1e3eb25cb2324db5e6552af5d612a
     linkedCells: []
     parentIndex: -1
   platformSettings:
