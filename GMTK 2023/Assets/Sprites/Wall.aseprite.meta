@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638244490486552009
+  platformSettingsDirtyTick: 638244501593413283
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -207,7 +207,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
+      x: 28
       y: 52
       width: 16
       height: 16
@@ -229,7 +229,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 28
-      width: 17
+      width: 16
       height: 16
     spriteID: 4b4deb3372296764ba1929ece30e43c3
     spriteBone: []
@@ -247,7 +247,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
+      x: 28
       y: 28
       width: 16
       height: 16
@@ -269,7 +269,7 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 17
+      width: 16
       height: 16
     spriteID: e3128ca655f2a6140889270fcb84a9a6
     spriteBone: []
@@ -287,7 +287,7 @@ ScriptedImporter:
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 29
+      x: 28
       y: 4
       width: 16
       height: 16
@@ -415,7 +415,7 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 17
+        width: 16
         height: 16
       spriteId: 92c927b6886d3c046a76f39a16aae7a0
     linkedCells: []
@@ -430,9 +430,9 @@ ScriptedImporter:
     - name: Wall_BottomRight
       frameIndex: 0
       cellRect:
-        x: 31
+        x: 32
         y: 0
-        width: 17
+        width: 16
         height: 16
       spriteId: 29f2d2f2446321642911a715e75f6eb0
     linkedCells: []
