@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 88208406}
   m_Layer: 0
   m_Name: GameObject
-  m_TagString: Untagged
+  m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 88208405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: 3, z: 0}
+  m_LocalPosition: {x: -0.5, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -210,9 +210,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -271,9 +283,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -395,6 +419,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -456,6 +492,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_MiddleLeft (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3864625513412269984, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -474,9 +522,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 2917477526149994120, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917477526149994120, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3887651126463078119, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
       propertyPath: m_Name
       value: Wall_TopRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887651126463078119, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6899106738981910824, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
       propertyPath: m_RootOrder
@@ -583,6 +643,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -601,9 +673,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 1574289584142797726, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574289584142797726, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1978819814895883351, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
       propertyPath: m_Name
       value: Wall_BottomRight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978819814895883351, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 8332568110731752042, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
       propertyPath: m_RootOrder
@@ -667,9 +751,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -728,9 +824,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 2917477526149994120, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2917477526149994120, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 3887651126463078119, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
       propertyPath: m_Name
       value: Wall_TopRight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3887651126463078119, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6899106738981910824, guid: c7ea2dba5cdbf434ca958e942c62fec5, type: 3}
       propertyPath: m_RootOrder
@@ -836,6 +944,18 @@ PrefabInstance:
     - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
       propertyPath: m_Name
       value: Wall_TopCenter (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -948,6 +1068,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_MiddleLeft (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3864625513412269984, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1014,6 +1146,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1027,9 +1171,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1253,9 +1409,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1319,9 +1487,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1438,6 +1618,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1456,6 +1648,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 893067256724702851, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 893067256724702851, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2657479094034177805, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1504,6 +1704,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 7062194845095447319, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1517,9 +1721,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1578,6 +1794,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 893067256724702851, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 893067256724702851, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2657479094034177805, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1626,6 +1850,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopLeft (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7062194845095447319, guid: bd714be6f0d3b7f4b81147b0186b6b1b, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1639,9 +1867,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1715,7 +1955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8835057547102461766, guid: 98764b5c7f3e5b249800806052d5ec88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 8835057547102461766, guid: 98764b5c7f3e5b249800806052d5ec88, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1766,9 +2006,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1880,6 +2132,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1908,9 +2172,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -1969,9 +2245,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -2030,9 +2318,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4682896993518444031, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_Name
       value: Wall_BottomCenter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5119662999657549865, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 6119169218139224195, guid: eb9b921c6aa9b5442ad745043ba3718a, type: 3}
       propertyPath: m_RootOrder
@@ -2139,6 +2439,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2205,6 +2517,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2218,9 +2542,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88208407}
     m_Modifications:
+    - target: {fileID: 1574289584142797726, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1574289584142797726, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1978819814895883351, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
       propertyPath: m_Name
       value: Wall_BottomRight
+      objectReference: {fileID: 0}
+    - target: {fileID: 1978819814895883351, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     - target: {fileID: 8332568110731752042, guid: 71e9347b81ba1974893cd582c5c01189, type: 3}
       propertyPath: m_RootOrder
@@ -2332,6 +2668,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_MiddleLeft (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3864625513412269984, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2392,6 +2740,18 @@ PrefabInstance:
     - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
       propertyPath: m_Name
       value: Wall_TopCenter (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2454,6 +2814,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_MiddleLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 3864625513412269984, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8038506720413258436, guid: b73a439f762f30942b9c246479c0b889, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2483,11 +2855,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3976941537578968822, guid: bf4fcac029ad05e46a75dbd8fd5e2b06, type: 3}
       propertyPath: m_LocalScale.x
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3976941537578968822, guid: bf4fcac029ad05e46a75dbd8fd5e2b06, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6
+      value: -4.5
       objectReference: {fileID: 0}
     - target: {fileID: 3976941537578968822, guid: bf4fcac029ad05e46a75dbd8fd5e2b06, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2545,6 +2917,18 @@ PrefabInstance:
     - target: {fileID: 2733621052617576144, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
       propertyPath: m_Name
       value: Wall_BottomLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733621052617576144, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577631897673276860, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577631897673276860, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7847134161039606641, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
       propertyPath: m_RootOrder
@@ -2656,6 +3040,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_TopCenter (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2667269135628639262, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5631486576366413146, guid: 43ef9fb1124dced4fbb4a062082ecc64, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2672,6 +3068,18 @@ PrefabInstance:
     - target: {fileID: 2733621052617576144, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
       propertyPath: m_Name
       value: Wall_BottomLeft (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2733621052617576144, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577631897673276860, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_Size.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5577631897673276860, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
+      propertyPath: m_Size.y
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 7847134161039606641, guid: 3000f7137ad70cc4ea328bd7eaa5dfce, type: 3}
       propertyPath: m_RootOrder
