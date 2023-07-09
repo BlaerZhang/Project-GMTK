@@ -21,7 +21,7 @@ public class Player : PushableObject, IDestroyable
         // play animation
         
         // disable object
-        
+
         // game over interface: allow undo / restart
     }
 }
