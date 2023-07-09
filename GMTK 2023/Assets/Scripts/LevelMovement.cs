@@ -20,6 +20,8 @@ public class LevelMovement : MonoBehaviour
 
     private MMF_Player pushFeedback;
 
+    private Animator handAnimator;
+
 
     private void Awake()
     {
@@ -29,6 +31,7 @@ public class LevelMovement : MonoBehaviour
     private void Start()
     {
         pushFeedback = GameObject.Find("PushFeedback").GetComponent<MMF_Player>();
+        handAnimator = GameObject.Find("Hands").GetComponent<Animator>();
     }
 
     void Update()
@@ -52,6 +55,7 @@ public class LevelMovement : MonoBehaviour
             } 
             lastDirt = currentDirt;
             currentDestination = transform.position + stepDistance * currentDirt;
+            handAnimator.SetTrigger("Up");
         }
         else if (Input.GetKeyDown(KeyCode.A))
         {
@@ -64,6 +68,7 @@ public class LevelMovement : MonoBehaviour
             } 
             lastDirt = currentDirt;
             currentDestination = transform.position + stepDistance * currentDirt;
+            handAnimator.SetTrigger("Left");
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
@@ -76,6 +81,7 @@ public class LevelMovement : MonoBehaviour
             } 
             lastDirt = currentDirt;
             currentDestination = transform.position + stepDistance * currentDirt;
+            handAnimator.SetTrigger("Down");
         }
         else if (Input.GetKeyDown(KeyCode.D))
         {
@@ -88,6 +94,7 @@ public class LevelMovement : MonoBehaviour
             } 
             lastDirt = currentDirt;
             currentDestination = transform.position + stepDistance * currentDirt;
+            handAnimator.SetTrigger("Right");
         }
 
         if(currentDestination != Vector3.zero & !isMoving)
