@@ -33,12 +33,12 @@ public class GameState
             Debug.Log(element.name + element.type);
             if(element.type == SavedElement.Type.Terrain)
             {
-                gameStateToSave.terrainsActiveness.Add(element.isActiveAndEnabled);
+                gameStateToSave.terrainsActiveness.Add(element.gameObject.activeSelf);
             }
             else if(element.type == SavedElement.Type.Object)
             {
                 gameStateToSave.objectSprites.Add(element.transform.GetComponent<SpriteRenderer>().sprite);
-                gameStateToSave.objectsActiveness.Add(element.isActiveAndEnabled);
+                gameStateToSave.objectsActiveness.Add(element.GetComponent<SpriteRenderer>().enabled);
                 gameStateToSave.objectPositions.Add(element.transform.position);
             }
             else if(element.type == SavedElement.Type.Level)
@@ -70,11 +70,12 @@ public class GameState
             }
             else if(elementToLoad.type == SavedElement.Type.Object)
             {
+                elementToLoad.GetComponent<SpriteRenderer>().enabled = remainingObjectsActiveness[0];
+                elementToLoad.GetComponent<BoxCollider2D>().enabled = remainingObjectsActiveness[0];
+                remainingObjectsActiveness.RemoveAt(0);
+                
                 elementToLoad.GetComponent<SpriteRenderer>().sprite = remainingObjectSprites[0];
                 remainingObjectSprites.RemoveAt(0);
-                
-                elementToLoad.gameObject.SetActive(remainingObjectsActiveness[0]);
-                remainingObjectsActiveness.RemoveAt(0);
 
                 elementToLoad.transform.position = remainingObjectPosition[0];
                 remainingObjectPosition.RemoveAt(0);
@@ -83,7 +84,6 @@ public class GameState
             {
                 elementToLoad.transform.position = levelPosition;
             }
-            // TODO: add more cases: collider enable/disable, sprite switch 
         }
     }
 }

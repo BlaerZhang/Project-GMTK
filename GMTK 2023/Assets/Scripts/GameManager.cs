@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,10 +19,19 @@ public class GameManager : MonoBehaviour
         {
             UndoMove();
         }
-        
-        //TODO: add restart function
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
     }
-    
+
+    public static void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
     public static void SaveGameState()
     {
         savedStates.Add(GameState.GetCurrentState());
