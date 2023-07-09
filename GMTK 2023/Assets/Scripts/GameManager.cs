@@ -6,10 +6,22 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static List<GameState> savedStates = new List<GameState>();
+
+    public static GameManager instance;
     
     void Start()
     {
         SaveGameState();
+        
+        if (instance != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     // TODO: better way to lock undo when objects are moving
