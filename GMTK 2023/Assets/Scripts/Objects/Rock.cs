@@ -12,29 +12,27 @@ public class Rock : PushableObject, IDestroyable, ITransformable
 {
     protected override void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.collider.tag.Equals("Water"))
-        {
+        if (other.gameObject.tag.Equals("Enemy") ||
+            other.gameObject.tag.Equals("Water"))
             DestroyObject();
-            return;
-        }
         
-        Vector3 moveDirt = CheckColliderLocation(other.collider);
+        if (other.gameObject.tag.Equals("Lava")) TransformObject(other.collider);
         
-        // if the object is moving, all new movement to another direction should be avoided
-        if (DOTween.IsTweening(transform, true) & lastMoveDirt != moveDirt) return;
-        
-        Push(moveDirt);
-        lastMoveDirt = moveDirt;
-        
-        
+        base.OnCollisionEnter2D(other);
     }
 
-    public void TransformObject()
+    // TODO: change sort order
+    public void TransformObject(Collider2D other)
     {
         // change sprite
+        GetComponent<SpriteRenderer>().color = Color.black;
+        
+        // disable the original terrain sprite and collider
+        other.GetComponent<SpriteRenderer>().enabled = false;
+        other.GetComponent<BoxCollider2D>().enabled = false;
         
         // change collider state
-        
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void DestroyObject()
@@ -42,6 +40,7 @@ public class Rock : PushableObject, IDestroyable, ITransformable
         // play animation
         
         // disable object
-        
+        GetComponent<SpriteRenderer>().enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 }

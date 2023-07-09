@@ -14,5 +14,5 @@ public interface IDestroyable
 
 public interface ITransformable
 {
-    void TransformObject();
+    void TransformObject(Collider2D other);
 }

@@ -11,6 +11,6 @@ public abstract class BaseTerrain : MonoBehaviour
 
     protected virtual void Init()
     {
-        GetComponent<SpriteRenderer>().sortingOrder = 0;
+        GetComponent<SpriteRenderer>().sortingOrder = -1;
     }
 }

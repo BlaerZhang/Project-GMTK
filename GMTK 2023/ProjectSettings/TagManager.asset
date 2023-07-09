@@ -9,6 +9,9 @@ TagManager:
   - Water
   - Lava
   - Enemy
+  - Weapon
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX

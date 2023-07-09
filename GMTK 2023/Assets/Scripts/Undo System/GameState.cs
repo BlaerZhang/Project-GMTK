@@ -30,10 +30,9 @@ public class GameState
 
         foreach(SavedElement element in elementsToSaveOnScene)
         {
-            Debug.Log(element.name + element.type);
             if(element.type == SavedElement.Type.Terrain)
             {
-                gameStateToSave.terrainsActiveness.Add(element.gameObject.activeSelf);
+                gameStateToSave.terrainsActiveness.Add(element.GetComponent<SpriteRenderer>().enabled);
             }
             else if(element.type == SavedElement.Type.Object)
             {
@@ -49,6 +48,7 @@ public class GameState
         return gameStateToSave;
     }
     
+    // TODO: undo sort order 
     public void LoadGameState()
     {
         SavedElement[] elementsToLoadOnscene = GameObject.FindObjectsOfType<SavedElement>();
@@ -63,7 +63,11 @@ public class GameState
         {
             if(elementToLoad.type == SavedElement.Type.Terrain)
             {
-                elementToLoad.gameObject.SetActive(remainingTerrainsActiveness[0]);
+                Debug.Log("name " + elementToLoad.gameObject.name);
+                Debug.Log("active " + remainingTerrainsActiveness[0]);
+                elementToLoad.GetComponent<SpriteRenderer>().enabled = remainingTerrainsActiveness[0];
+                elementToLoad.GetComponent<BoxCollider2D>().enabled = remainingTerrainsActiveness[0];
+                remainingTerrainsActiveness.RemoveAt(0);
                 // elementToLoad.transform.position = playerPos;
                 // elementToLoad.GetComponent<SpriteRenderer>().sprite = playerSprite;
                 // elementToLoad.GetComponent<Player>().UndoSpriteIndex();

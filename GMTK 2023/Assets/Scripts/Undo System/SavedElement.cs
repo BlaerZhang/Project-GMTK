@@ -7,7 +7,7 @@ using UnityEngine;
 /// player: position, active, (sprite)
 /// enemy: position, active, (sprite)
 /// rock: position, active, sprite
-/// tree: position, active, sprite
+/// tree: position, active, sprite 
 ///
 /// water: active
 /// lava: active

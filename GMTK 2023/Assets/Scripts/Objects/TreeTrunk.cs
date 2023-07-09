@@ -22,12 +22,13 @@ public class TreeTrunk : PushableObject, IDestroyable, ITransformable
         lastMoveDirt = moveDirt;
     }
     
-    public void TransformObject()
+    // TODO: change sort order
+    public void TransformObject(Collider2D other)
     {
         // change sprite
         
         // change collider state
-        
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
     public void DestroyObject()
