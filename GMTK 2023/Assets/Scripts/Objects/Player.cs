@@ -13,7 +13,8 @@ public class Player : PushableObject, IDestroyable
 
     protected override void OnCollisionEnter2D(Collision2D other)
     {
-        throw new NotImplementedException();
+        base.OnCollisionEnter2D(other);
+        // throw new NotImplementedException();
     }
 
     public void DestroyObject()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace Terrain
 {
-    [RequireComponent(typeof(BoxCollider2D))]
+    [RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(SavedElement))]
     public class Water : BaseTerrain 
     {
         protected override void Init()
@@ -15,7 +15,7 @@ namespace Terrain
             BoxCollider2D col = GetComponent<BoxCollider2D>();
             col.size = new Vector2(0.9f, 0.9f);
             
-            GetComponent<SpriteRenderer>().sortingOrder = 0;
+            GetComponent<SavedElement>().type = SavedElement.Type.Terrain;
         }
     }
 }

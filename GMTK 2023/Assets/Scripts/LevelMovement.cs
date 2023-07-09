@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+[RequireComponent(typeof(SavedElement))]
 public class LevelMovement : MonoBehaviour
 {
     public float stepDistance = 1f;
@@ -15,7 +16,12 @@ public class LevelMovement : MonoBehaviour
     private float nextMoveDelay = 0f;
 
     public static bool isMoving = false;
-    
+
+
+    private void Start()
+    {
+        GetComponent<SavedElement>().type = SavedElement.Type.Level;
+    }
 
     void Update()
     {

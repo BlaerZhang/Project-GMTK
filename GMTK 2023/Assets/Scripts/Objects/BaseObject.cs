@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(Rigidbody2D))][RequireComponent(typeof(SavedElement))]
 public abstract class BaseObject : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
         Init();
     }
@@ -22,5 +22,7 @@ public abstract class BaseObject : MonoBehaviour
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         
         GetComponent<SpriteRenderer>().sortingOrder = 1;
+        
+        GetComponent<SavedElement>().type = SavedElement.Type.Object;
     }
 }

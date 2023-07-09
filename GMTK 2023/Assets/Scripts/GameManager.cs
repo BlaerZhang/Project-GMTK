@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
     // TODO: better way to lock undo when objects are moving
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z) & !LevelMovement.isMoving)
+        if(Input.GetKeyDown(KeyCode.Z))
         {
             UndoMove();
         }
@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
 
     public static void UndoMove()
     {
+        print("savedStates.Count " + savedStates.Count);
         if(savedStates.Count<=1)
         {
             Debug.Log("No moves to undo");

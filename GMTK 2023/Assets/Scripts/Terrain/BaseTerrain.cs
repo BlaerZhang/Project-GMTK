@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class BaseTerrain : MonoBehaviour
 {
-    private void Start()
+    private void Awake()
     {
         Init();
     }

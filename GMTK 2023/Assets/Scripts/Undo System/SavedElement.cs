@@ -14,6 +14,6 @@ using UnityEngine;
 /// </summary>
 public class SavedElement : MonoBehaviour
 {
-    public enum Type {Box,Player};
+    public enum Type { Terrain, Object, Level };
     public Type type;
 }
