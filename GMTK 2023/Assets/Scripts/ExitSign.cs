@@ -25,6 +25,13 @@ public class ExitSign : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         // enter the next level
-        if (other.collider.tag.Equals("Player")) GameManager.LoadLevel(SceneManager.GetActiveScene().buildIndex);
+        if (other.collider.tag.Equals("Player"))
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex - 2;
+            print("finished level " + currentSceneIndex);
+            print(SceneManager.sceneCountInBuildSettings);
+            int nextSceneIndex = currentSceneIndex + 1;
+            if (nextSceneIndex < SceneManager.sceneCountInBuildSettings - 2) GameManager.LoadLevel(nextSceneIndex);
+        }
     }
 }
