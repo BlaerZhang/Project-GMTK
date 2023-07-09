@@ -1,10 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class Player : PushableObject, IDestroyable
 {
+    private MMF_Player dieFeedback;
+    
+    private void Start()
+    {
+        dieFeedback = GameObject.Find("DieFeedback").GetComponent<MMF_Player>();
+    }
+    
     protected override void Init()
     {
         base.Init();
@@ -25,6 +33,7 @@ public class Player : PushableObject, IDestroyable
     public void DestroyObject()
     {
         // play animation
+        dieFeedback.PlayFeedbacks();
         
         // disable object
         GetComponent<SpriteRenderer>().enabled = false;

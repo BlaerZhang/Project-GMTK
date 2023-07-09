@@ -1,9 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class Enemy : PushableObject, IDestroyable
 {
+    private MMF_Player killEnemyFeedback;
+
+    private void Start()
+    {
+        killEnemyFeedback = GameObject.Find("KillEnemyFeedback").GetComponent<MMF_Player>();
+    }
     protected override void Init()
     {
         base.Init();
@@ -23,6 +30,7 @@ public class Enemy : PushableObject, IDestroyable
     public void DestroyObject()
     {
         // play animation
+        killEnemyFeedback.PlayFeedbacks();
         
         // destroy object
         GetComponent<SpriteRenderer>().enabled = false;

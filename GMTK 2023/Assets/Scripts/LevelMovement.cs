@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using MoreMountains.Feedbacks;
 
 [RequireComponent(typeof(SavedElement))]
 public class LevelMovement : MonoBehaviour
@@ -17,10 +18,17 @@ public class LevelMovement : MonoBehaviour
 
     public static bool isMoving = false;
 
+    private MMF_Player pushFeedback;
+
+
+    private void Awake()
+    {
+        GetComponent<SavedElement>().type = SavedElement.Type.Level;
+    }
 
     private void Start()
     {
-        GetComponent<SavedElement>().type = SavedElement.Type.Level;
+        pushFeedback = GameObject.Find("PushFeedback").GetComponent<MMF_Player>();
     }
 
     void Update()
@@ -93,5 +101,6 @@ public class LevelMovement : MonoBehaviour
     {
         transform.DOMove(destination, 0.2f)
             .OnComplete(() => { GameManager.SaveGameState(); });
+        pushFeedback.PlayFeedbacks(); 
     }
 }

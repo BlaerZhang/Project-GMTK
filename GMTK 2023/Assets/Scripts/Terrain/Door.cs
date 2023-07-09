@@ -1,11 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))] [RequireComponent(typeof(SavedElement))]
 public class Door : MonoBehaviour, IDestroyable
 {
+    private MMF_Player unlockFeedback;
+    
+    private void Start()
+    {
+        unlockFeedback = GameObject.Find("UnlockFeedback").GetComponent<MMF_Player>();
+    }
     private void Awake()
     {
         gameObject.tag = "Door";
@@ -20,6 +27,7 @@ public class Door : MonoBehaviour, IDestroyable
     public void DestroyObject()
     {      
         // play animation
+        unlockFeedback.PlayFeedbacks();
         
         // disable object
         GetComponent<SpriteRenderer>().enabled = false;

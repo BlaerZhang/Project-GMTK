@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,8 +9,10 @@ public class GameManager : MonoBehaviour
     public static List<GameState> savedStates = new List<GameState>();
 
     public static GameManager instance;
+
+    private static MMF_Player undoFeedback;
     
-    void Start()
+    void Awake()
     {
         SaveGameState();
         
@@ -22,6 +25,8 @@ public class GameManager : MonoBehaviour
             instance = this;
             DontDestroyOnLoad(gameObject);
         }
+
+        undoFeedback = GameObject.Find("UndoFeedback").GetComponent<MMF_Player>();
     }
 
     // TODO: better way to lock undo when objects are moving
@@ -60,6 +65,7 @@ public class GameManager : MonoBehaviour
         {
             savedStates[savedStates.Count-2].LoadGameState();
             savedStates.RemoveAt(savedStates.Count-1);
+            undoFeedback.PlayFeedbacks();
         }
     }
 }

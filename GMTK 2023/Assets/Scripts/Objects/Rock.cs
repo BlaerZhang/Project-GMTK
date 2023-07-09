@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using MoreMountains.Feedbacks;
 
 /// <summary>
 /// 1. when on the lava -> change sprite (floating) -> will not collide with other objects and walls
@@ -10,6 +11,13 @@ using DG.Tweening;
 /// </summary>
 public class Rock : PushableObject, IDestroyable, ITransformable
 {
+    private MMF_Player intoLavaFeedback;
+
+    private void Start()
+    {
+        intoLavaFeedback = GameObject.Find("IntoLavaFeedback").GetComponent<MMF_Player>();
+    }
+
     protected override void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag.Equals("Water"))
@@ -32,6 +40,9 @@ public class Rock : PushableObject, IDestroyable, ITransformable
         
         // change collider state
         GetComponent<BoxCollider2D>().enabled = false;
+        
+        // play feedback
+        intoLavaFeedback.PlayFeedbacks();
     }
 
     public void DestroyObject()
