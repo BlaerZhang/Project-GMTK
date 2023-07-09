@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7578704208480443384}
   - component: {fileID: 3873319963521467426}
   - component: {fileID: 8909951558718134253}
+  - component: {fileID: 657662724083045834}
+  - component: {fileID: 3149413527618808734}
   m_Layer: 0
   m_Name: Stone
   m_TagString: Untagged
@@ -169,5 +171,30 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4c6191a88c2d3e41a7f1af784b71d2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &657662724083045834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451383974237853497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ec695cd854c98a794f30dbc166c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+--- !u!114 &3149413527618808734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5451383974237853497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fa348f84a034c7f858f0198caec0d93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

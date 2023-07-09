@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3363723823996167731}
+  - component: {fileID: -2521183651795369451}
   - component: {fileID: 1689418861305714586}
   - component: {fileID: 6444207610103746708}
+  - component: {fileID: -3786141489944682221}
   m_Layer: 0
   m_Name: Lava_BottomCenter
   m_TagString: Untagged
@@ -33,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2521183651795369451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124750304430547861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1bd7ba4517445e90c7b5e386bbc075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1689418861305714586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -130,3 +144,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &-3786141489944682221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6124750304430547861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ec695cd854c98a794f30dbc166c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0

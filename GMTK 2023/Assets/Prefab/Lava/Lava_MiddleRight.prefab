@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4096009185076774172}
+  - component: {fileID: 6827941201091606290}
   - component: {fileID: 1092646106767827506}
   - component: {fileID: 8982228163020511464}
+  - component: {fileID: 7495536091860554786}
   m_Layer: 0
   m_Name: Lava_MiddleRight
   m_TagString: Untagged
@@ -33,6 +35,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6827941201091606290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029755855738098012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c1bd7ba4517445e90c7b5e386bbc075, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1092646106767827506
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -130,3 +144,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &7495536091860554786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029755855738098012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ec695cd854c98a794f30dbc166c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0

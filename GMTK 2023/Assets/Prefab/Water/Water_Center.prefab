@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8055778022698420987}
   - component: {fileID: 6495516317577968041}
+  - component: {fileID: -5854511928436716153}
   - component: {fileID: 4433967255081258757}
+  - component: {fileID: -7729650930939649866}
   m_Layer: 0
   m_Name: Water_Center
   m_TagString: Untagged
@@ -85,6 +87,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5854511928436716153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735534126127505426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bf0bd69bf34ff58730ba4897a66178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &4433967255081258757
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,3 +144,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &-7729650930939649866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4735534126127505426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ec695cd854c98a794f30dbc166c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0

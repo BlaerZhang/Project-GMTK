@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5962777948462808089}
   - component: {fileID: 9071405805048473687}
+  - component: {fileID: -5281669959907518207}
   - component: {fileID: 7039959842330979105}
+  - component: {fileID: -8165454312475561854}
   m_Layer: 0
   m_Name: Water_BottomLeft
   m_TagString: Untagged
@@ -85,6 +87,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-5281669959907518207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440482897344866040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bf0bd69bf34ff58730ba4897a66178, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!61 &7039959842330979105
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -130,3 +144,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 0.9}
   m_EdgeRadius: 0
+--- !u!114 &-8165454312475561854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2440482897344866040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097ec695cd854c98a794f30dbc166c22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
