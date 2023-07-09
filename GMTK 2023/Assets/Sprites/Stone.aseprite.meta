@@ -171,9 +171,9 @@ ScriptedImporter:
     - name: Layer 1
       frameIndex: 0
       cellRect:
-        x: 0
+        x: 1
         y: 0
-        width: 16
+        width: 14
         height: 16
       spriteId: 528df697125a16e43992b2c8696c3e36
     linkedCells: []
