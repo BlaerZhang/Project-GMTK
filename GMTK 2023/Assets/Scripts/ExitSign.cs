@@ -34,7 +34,7 @@ public class ExitSign : MonoBehaviour
             if (nextSceneIndex < SceneManager.sceneCountInBuildSettings - 2) GameManager.LoadLevel(nextSceneIndex);
             else
             {
-                GameManager.LoadLevel(SceneManager.GetSceneByName("Level Selection").buildIndex);
+                SceneManager.LoadScene("Level Selection");
             }
         }
     }

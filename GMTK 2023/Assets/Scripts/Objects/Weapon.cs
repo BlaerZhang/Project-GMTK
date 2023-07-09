@@ -9,6 +9,7 @@ public class Weapon : PushableObject, IDestroyable
     {
         base.Init();
         gameObject.tag = "Weapon";
+        GetComponent<SpriteRenderer>().sortingOrder = 1;
     }
 
     protected override void OnCollisionEnter2D(Collision2D other)
