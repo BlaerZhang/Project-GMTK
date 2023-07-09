@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))][RequireComponent(typeof(Rigidbody2D))][RequireComponent(typeof(SavedElement))]
 public abstract class BaseObject : MonoBehaviour
 {
+    public Sprite[] objectSprites;
+
     private void Awake()
     {
         Init();
@@ -21,7 +23,7 @@ public abstract class BaseObject : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeAll;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         
-        GetComponent<SpriteRenderer>().sortingOrder = 1;
+        // GetComponent<SpriteRenderer>().sortingOrder = 0;
         
         GetComponent<SavedElement>().type = SavedElement.Type.Object;
     }
