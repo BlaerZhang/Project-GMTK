@@ -12,8 +12,7 @@ public class Rock : PushableObject, IDestroyable, ITransformable
 {
     protected override void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag.Equals("Enemy") ||
-            other.gameObject.tag.Equals("Water"))
+        if (other.gameObject.tag.Equals("Water"))
             DestroyObject();
         
         if (other.gameObject.tag.Equals("Lava")) TransformObject(other.collider);
