@@ -2,7 +2,12 @@ fileFormatVersion: 2
 guid: 27646c627f532b54db2895350a5edd6e
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:AnimationClip
+      assembly: UnityEngine.AnimationModule
+      name: Goblin_Clip
+    second: {fileID: 7400000, guid: 4ef63df18528b0b469a71133ff0968fc, type: 2}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -73,7 +78,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -85,7 +90,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 0
+    layerImportMode: 1
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -95,7 +100,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638244627657160859
+  platformSettingsDirtyTick: 638245024030282712
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -119,10 +124,10 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 1
+  - name: Goblin_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -130,7 +135,7 @@ ScriptedImporter:
       y: 4
       width: 16
       height: 15
-    spriteID: 11b0d93080eea4f4da11720d4c1665b2
+    spriteID: 005ded115dab38443932031e4c0177f9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,6 +144,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
+  - name: Goblin_Frame_1
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 7
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 27
+      width: 16
+      height: 14
+    spriteID: 3c5d673d2082d404c9a14fde3a6b3aed
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 27}
   spriteSheetImportData:
   - name: Goblin_0
     originalName: 
@@ -161,21 +186,29 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   asepriteLayers:
-  - layerIndex: 1
-    guid: 1317222745
-    name: Layer 1
-    layerFlags: 3
+  - layerIndex: 0
+    guid: 1151128285
+    name: Goblin
+    layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 1
+    - name: Goblin_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
         y: 1
         width: 16
         height: 15
-      spriteId: 11b0d93080eea4f4da11720d4c1665b2
+      spriteId: 005ded115dab38443932031e4c0177f9
+    - name: Goblin_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 1
+        width: 16
+        height: 14
+      spriteId: 3c5d673d2082d404c9a14fde3a6b3aed
     linkedCells: []
     parentIndex: -1
   platformSettings:

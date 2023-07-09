@@ -1,13 +1,8 @@
 fileFormatVersion: 2
-guid: 65115b17a456b3b43a1396ec30ff5adb
+guid: bacd27baa490e36478833433ef5c6c76
 ScriptedImporter:
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:AnimationClip
-      assembly: UnityEngine.AnimationModule
-      name: Character_Clip
-    second: {fileID: 7400000, guid: c91428cc9e2d0ae42b45d44fb8295cd8, type: 2}
+  externalObjects: {}
   serializedVersion: 2
   userData: 
   assetBundleName: 
@@ -76,9 +71,9 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -88,9 +83,9 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
-    fileImportMode: 1
+    fileImportMode: 0
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -100,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638245028955054949
+  platformSettingsDirtyTick: 638245057469669081
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Character_Frame_0
+  - name: Door
     originalName: 
     pivot: {x: 0.5, y: 0}
-    alignment: 7
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 15
+      width: 16
       height: 16
-    spriteID: 575f439103c4d9a4ba083eda95867ac3
+    spriteID: 7b706bcca0c529f4590d06c0f318c492
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -144,18 +139,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Character_Frame_1
+  spriteSheetImportData:
+  - name: Door_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 7
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 28
-      width: 15
-      height: 15
-    spriteID: b48faf006373b344b8d450fbc60e9662
+      width: 16
+      height: 16
+    spriteID: d922e4963d73eda4c828b57ae0c01ef6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,32 +159,40 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
-  spriteSheetImportData: []
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
-    guid: -1246400679
-    name: Character
-    layerFlags: 0
+    guid: -1021688250
+    name: Background
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Character_Frame_0
+    - name: Background
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 15
+        width: 16
         height: 16
-      spriteId: 575f439103c4d9a4ba083eda95867ac3
-    - name: Character_Frame_1
-      frameIndex: 1
+      spriteId: 454f95460efc1264498b6d579acd13c4
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -1909541105
+    name: Door
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Door
+      frameIndex: 0
       cellRect:
         x: 0
         y: 0
-        width: 15
-        height: 15
-      spriteId: b48faf006373b344b8d450fbc60e9662
+        width: 16
+        height: 16
+      spriteId: 58c7ea1c1436b354589d5e07298a9261
     linkedCells: []
     parentIndex: -1
   platformSettings:
