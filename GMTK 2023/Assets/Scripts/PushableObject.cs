@@ -7,7 +7,7 @@ using DG.Tweening;
 [RequireComponent(typeof(BoxCollider2D))]
 public class PushableObject : MonoBehaviour, IPushable
 {
-    private string lastPusher;
+    private Vector3 lastMoveDirt = Vector3.zero;
 
     public void Push(Vector3 dirt)
     {
@@ -17,10 +17,13 @@ public class PushableObject : MonoBehaviour, IPushable
     private void OnCollisionEnter2D(Collision2D other)
     {
         // print(other.collider.name);
-        // if the last pusher and the current pusher are different, the movement caused by the current pusher is not allowed
-        if (DOTween.IsTweening(transform, true) & !other.collider.tag.Equals(lastPusher)) return;
-        Push(CheckColliderLocation(other.collider));
-        lastPusher = other.collider.tag;
+        Vector3 moveDirt = CheckColliderLocation(other.collider);
+        
+        // if the object is moving, all new movement to another direction should be avoided
+        if (DOTween.IsTweening(transform, true) & lastMoveDirt != moveDirt) return;
+        
+        Push(moveDirt);
+        lastMoveDirt = moveDirt;
     }
 
     private Vector3 CheckColliderLocation(Collider2D other)
@@ -28,7 +31,7 @@ public class PushableObject : MonoBehaviour, IPushable
         Vector3 moveDirt = Vector3.zero;
         Vector3 relativeLoc = transform.position - other.transform.position;
         moveDirt = new Vector3(Mathf.RoundToInt(relativeLoc.x), Mathf.RoundToInt(relativeLoc.y));
-
+        
         return moveDirt;
     }
 }
