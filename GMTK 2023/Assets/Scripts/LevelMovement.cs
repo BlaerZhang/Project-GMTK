@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
+[RequireComponent(typeof(SavedElement))]
 public class LevelMovement : MonoBehaviour
 {
     public float stepDistance = 1f;
@@ -13,10 +14,18 @@ public class LevelMovement : MonoBehaviour
     private Vector3 lastDirt = Vector3.zero;
     
     private float nextMoveDelay = 0f;
-    
+
+    public static bool isMoving = false;
+
+
+    private void Start()
+    {
+        GetComponent<SavedElement>().type = SavedElement.Type.Level;
+    }
 
     void Update()
     {
+        isMoving = DOTween.IsTweening(transform, true);
         GetMovementInput();
     }
 
@@ -73,7 +82,7 @@ public class LevelMovement : MonoBehaviour
             currentDestination = transform.position + stepDistance * currentDirt;
         }
 
-        if(currentDestination != Vector3.zero && !DOTween.IsTweening(transform, true))
+        if(currentDestination != Vector3.zero & !isMoving)
         {
             destination = currentDestination;
             Invoke(nameof(Move), nextMoveDelay);

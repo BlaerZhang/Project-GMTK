@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,16 +12,26 @@ public class GameManager : MonoBehaviour
         SaveGameState();
     }
 
+    // TODO: better way to lock undo when objects are moving
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Z))
         {
             UndoMove();
         }
-        
-        //TODO: add restart function
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            RestartLevel();
+        }
     }
-    
+
+    public static void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+
     public static void SaveGameState()
     {
         savedStates.Add(GameState.GetCurrentState());
@@ -28,6 +39,7 @@ public class GameManager : MonoBehaviour
 
     public static void UndoMove()
     {
+        print("savedStates.Count " + savedStates.Count);
         if(savedStates.Count<=1)
         {
             Debug.Log("No moves to undo");
