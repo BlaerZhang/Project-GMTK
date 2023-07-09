@@ -18,7 +18,7 @@ public class LevelMovement : MonoBehaviour
     public static bool isMoving = false;
 
 
-    private void Start()
+    private void Awake()
     {
         GetComponent<SavedElement>().type = SavedElement.Type.Level;
     }

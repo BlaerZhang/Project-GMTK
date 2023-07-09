@@ -11,8 +11,6 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
-        SaveGameState();
-        
         if (instance != null)
         {
             Destroy(gameObject);
@@ -21,6 +19,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
     }
 
@@ -37,10 +37,27 @@ public class GameManager : MonoBehaviour
             RestartLevel();
         }
     }
+    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        print("Scene Loaded " + scene.name);
+        emptySavedStates();
+        SaveGameState();
+    }
+    
+    private void OnDestroy ()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     public static void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void emptySavedStates()
+    {
+        savedStates.Clear();
     }
 
 
