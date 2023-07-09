@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class ButtonUtils : MonoBehaviour
 {
+
+    private GameObject backPanel = null;
+    private void Start()
+    {
+        backPanel = GameObject.Find("Back Panel");
+
+        if (backPanel != null)
+        {
+            backPanel.SetActive(false);
+        }
+    }
 
     public void StartNewGame()
     {
@@ -25,12 +37,12 @@ public class ButtonUtils : MonoBehaviour
 
     public void TryBacktoMenu()
     {
-        
+        backPanel.SetActive(true);
     }
-    
-    public void ConfirmBacktoMenu()
+
+    public void CancelBack()
     {
-        SceneManager.LoadScene("Start Scene");
+        backPanel.SetActive(false);
     }
 
     public void SimpleBack()
