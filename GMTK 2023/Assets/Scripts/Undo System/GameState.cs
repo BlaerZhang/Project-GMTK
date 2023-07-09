@@ -22,7 +22,7 @@ public class GameState
         GameState gameStateToSave = new GameState();
         SavedElement[] elementsToSaveOnScene = GameObject.FindObjectsOfType<SavedElement>();
         
-        Debug.Log("elementsToSaveOnScene count " + elementsToSaveOnScene.Length);
+        // Debug.Log("elementsToSaveOnScene count " + elementsToSaveOnScene.Length);
 
         gameStateToSave.terrainsActiveness = new List<bool>();
         

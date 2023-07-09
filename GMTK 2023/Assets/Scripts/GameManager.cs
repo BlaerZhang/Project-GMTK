@@ -44,6 +44,12 @@ public class GameManager : MonoBehaviour
         emptySavedStates();
         SaveGameState();
     }
+
+    public static void LoadLevel(int levelIndexInName)
+    {
+        string levelName = "Level " + levelIndexInName;
+        SceneManager.LoadScene(levelName);
+    }
     
     private void OnDestroy ()
     {
@@ -59,8 +65,7 @@ public class GameManager : MonoBehaviour
     {
         savedStates.Clear();
     }
-
-
+    
     public static void SaveGameState()
     {
         savedStates.Add(GameState.GetCurrentState());
@@ -68,7 +73,7 @@ public class GameManager : MonoBehaviour
 
     public static void UndoMove()
     {
-        print("savedStates.Count " + savedStates.Count);
+        // print("savedStates.Count " + savedStates.Count);
         if(savedStates.Count<=1)
         {
             Debug.Log("No moves to undo");
