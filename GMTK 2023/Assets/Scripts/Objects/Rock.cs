@@ -32,7 +32,8 @@ public class Rock : PushableObject, IDestroyable, ITransformable
     public void TransformObject(Collider2D other)
     {
         // change sprite
-        GetComponent<SpriteRenderer>().color = Color.black;
+        if (objectSprites.Length > 0) GetComponent<SpriteRenderer>().sprite = objectSprites[0];
+        else throw new NullReferenceException();
         
         // disable the original terrain sprite and collider
         other.GetComponent<SpriteRenderer>().enabled = false;

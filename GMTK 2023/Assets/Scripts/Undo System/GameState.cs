@@ -21,6 +21,8 @@ public class GameState
     {
         GameState gameStateToSave = new GameState();
         SavedElement[] elementsToSaveOnScene = GameObject.FindObjectsOfType<SavedElement>();
+        
+        // Debug.Log("elementsToSaveOnScene count " + elementsToSaveOnScene.Length);
 
         gameStateToSave.terrainsActiveness = new List<bool>();
         
@@ -61,6 +63,7 @@ public class GameState
 
         foreach(SavedElement elementToLoad in elementsToLoadOnscene)
         {
+            Debug.Log("elementToLoad " + elementToLoad.gameObject.name);
             if(elementToLoad.type == SavedElement.Type.Terrain)
             {
                 Debug.Log("name " + elementToLoad.gameObject.name);

@@ -14,8 +14,6 @@ public class GameManager : MonoBehaviour
     
     void Awake()
     {
-        SaveGameState();
-        
         if (instance != null)
         {
             Destroy(gameObject);
@@ -24,6 +22,8 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
         undoFeedback = GameObject.Find("UndoFeedback").GetComponent<MMF_Player>();
@@ -42,13 +42,35 @@ public class GameManager : MonoBehaviour
             RestartLevel();
         }
     }
+    
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        print("Scene Loaded " + scene.name);
+        emptySavedStates();
+        SaveGameState();
+    }
+
+    public static void LoadLevel(int levelIndexInName)
+    {
+        string levelName = "Level " + levelIndexInName;
+        SceneManager.LoadScene(levelName);
+    }
+    
+    private void OnDestroy ()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
 
     public static void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-
+    private void emptySavedStates()
+    {
+        savedStates.Clear();
+    }
+    
     public static void SaveGameState()
     {
         savedStates.Add(GameState.GetCurrentState());
@@ -56,7 +78,7 @@ public class GameManager : MonoBehaviour
 
     public static void UndoMove()
     {
-        print("savedStates.Count " + savedStates.Count);
+        // print("savedStates.Count " + savedStates.Count);
         if(savedStates.Count<=1)
         {
             Debug.Log("No moves to undo");
