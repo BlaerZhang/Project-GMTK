@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class GameManager : MonoBehaviour
         SaveGameState();
     }
 
+    // TODO: better way to lock undo when objects are moving
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Z))
+        if(Input.GetKeyDown(KeyCode.Z) & !LevelMovement.isMoving)
         {
             UndoMove();
         }

@@ -4,17 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class PushableObject : MonoBehaviour, IPushable
+public class PushableObject : BaseObject, IPushable
 {
-    private Vector3 lastMoveDirt = Vector3.zero;
-
+    protected Vector3 lastMoveDirt = Vector3.zero;
+    
     public void Push(Vector3 dirt)
     {
         transform.DOMove(transform.position + dirt, 0.2f);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    protected virtual void OnCollisionEnter2D(Collision2D other)
     {
         // print(other.collider.name);
         Vector3 moveDirt = CheckColliderLocation(other.collider);
@@ -26,7 +25,7 @@ public class PushableObject : MonoBehaviour, IPushable
         lastMoveDirt = moveDirt;
     }
 
-    private Vector3 CheckColliderLocation(Collider2D other)
+    protected Vector3 CheckColliderLocation(Collider2D other)
     {
         Vector3 moveDirt = Vector3.zero;
         Vector3 relativeLoc = transform.position - other.transform.position;
